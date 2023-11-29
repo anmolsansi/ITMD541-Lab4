@@ -1,0 +1,193 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+/* Body styling */
+body {
+  /* Photograph clicked by me */
+  background: url('IMG_9564.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styling for the main container */
+.parent-current {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.linkClass{
+  color: #ffffff;
+}
+
+.current-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 650px;
+  padding-top: 20px;
+  background: rgba(134, 141, 145, .5);
+  border-radius: 25px;
+}
+
+.city-container {
+  padding-bottom: 30px;
+}
+
+.city-temp {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input.search_bar {
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+  background: rgba(252, 252, 252, .5);
+}
+
+.searchButton,
+.geoButton {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.timezone {
+  width: 100%;
+  padding-top: 30px;
+  display: none;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+}
+
+.dashboard {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todayInfo,
+.tomorrowInfo {
+  padding: 20px;
+  /* margin: 20px; */
+  flex: 1;
+  align-items: center;
+  /* Center-align content vertically */
+  justify-content: center;
+  /* Center-align content horizontally */
+  display: none;
+}
+
+.tomorrowData,
+.todayData {
+  margin-top: 14px;
+  margin-left: 38px;
+  margin-right: 14px;
+}
+
+.today,
+.tomorrow {
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.searchButton:focus,
+.geoButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.searchButton:hover,
+.geoButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.searchButton:active,
+.geoButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.forecast-parent {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  padding-top: 150px;
+}
+
+.forecastPapi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  background: rgba(134, 141, 145, .5);
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 615px) {}
+
+@media only screen and (max-width: 615px) {
+  .forecast-parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .forecastPapi {
+    height: auto;
+    overflow: scroll;
+    width: 100%;
+  }
+}

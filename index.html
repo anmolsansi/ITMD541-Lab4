@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleweather.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-...." crossorigin="anonymous" />
+  <title>Sunrise Sunset API Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="parent-current">
+
+      <div class="current-info">
+
+        <div class="city-container">
+
+          <div class="city-temp">
+            <div class="city">
+              <h3 id="city"> Choose a city or get current location </h3>
+            </div>
+            <div class="temperature">
+              <h3 id="currentTemp"> </h3>
+            </div>
+          </div>
+
+          <div class="search">
+            <input type="text" class="search_bar" id="searchBar" placeholder="Search">
+            <button type="submit" class="searchButton" id="searchButton">Search</button>
+            <button type="submit" class="geoButton" id="geoButton">Current Location</button>
+          </div>
+
+        </div>
+        <div class="timezone" id="timezone">timezone</div>
+        <div class="dashboard">
+          <div class="todayInfo" id="todayInfo">
+            <div id="today" class="today">Today</div>
+            <div class="todayData" id="todayData">
+              <div id="sunriseToday">test</div>
+              <div id="sunsetToday">test</div>
+              <div id="dawnToday">test</div>
+              <div id="duskToday">test</div>
+              <div id="dayLengthToday">test</div>
+              <div id="solarNoonToday">test</div>
+            </div>
+          </div>
+
+          <div class="tomorrowInfo" id="tomorrowInfo">
+            <div id="tomorrow" class="tomorrow">Tomorrow</div>
+            <div class="tomorrowData" id="tomorrowData">
+              <div id="sunriseTomorrow">test</div>
+              <div id="sunsetTomorrow">test</div>
+              <div id="dawnTomorrow">test</div>
+              <div id="duskTomorrow">test</div>
+              <div id="dayLengthTomorrow">test</div>
+              <div id="solarNoonTomorrow">test</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>For more information, visit:-
+      <p><a class="linkClass" href="https://sunrisesunset.io/api/">Sunrise & Sunset API</a></p>
+      <p><a class="linkClass" href="https://geocode.maps.co/">Geocode Maps API</a></p>
+      </p>
+    </footer>
+
+  </div>
+  <script src="scriptweather.js"></script>
+</body>
+
+</html>
