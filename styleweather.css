@@ -3,12 +3,20 @@
 
 /* Body styling */
 body {
-  /* Photograph clicked by me */
   background: url('IMG_9564.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Oswald', sans-serif;
+  margin: 0; 
+}
+
+/* Styling for the main container */
+.parent-current {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 
@@ -19,14 +27,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-/* Styling for the main container */
-.parent-current {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  padding: 20px;
 }
 
 .linkClass{
@@ -187,7 +187,12 @@ input.search_bar {
 
   .forecastPapi {
     height: auto;
-    overflow: scroll;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 300px; /* Set a maximum height for better control */
     width: 100%;
+  }
+
+  footer {
+    position: static; /* Change position to static for normal document flow */
   }
 }
